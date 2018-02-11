@@ -1,0 +1,18 @@
+video, .controls, .social{
+    display: block;
+    width: 24rem;
+    margin: 1rem auto;
+}
+
+
+.viewsContainer{
+    float: left;
+}
+
+.voteContainer{
+    float: right;
+}
+
+.timeContainer{
+    float: right;
+}
