@@ -1,0 +1,74 @@
+video, .controls, .social {
+    display: block;
+    width: 24rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.video-box {
+    background: #101010;
+    width: 25rem;
+    padding: 3px;
+    margin: auto;
+}
+
+.controls {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sliderBar {
+    cursor: pointer;
+}
+
+.fa-play {
+    color: white;
+}
+
+#playPause {
+    background: #101010;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 5px 15px;
+    width: 100px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.viewsContainer {
+    float: left;
+    display: none;
+}
+
+#thumbsUp {
+    background-color: white;
+    border: 1px solid green;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+#thumbsUp:hover{
+    background-color: green;
+}
+
+#thumbsDown {
+    background-color: white;
+    border: 1px solid red;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+#thumbsDown:hover {
+    background-color: red;
+}
+
+.voteContainer {
+    float: right;
+}

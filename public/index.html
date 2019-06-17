@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script type="text/javascript" src="player.js"></script>
+</head>
+<body>
+<div class="video-box">
+    <video id="videoPlayer">
+        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"/><!-- Safari / iOS, IE9 -->
+        <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm"/><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+        <source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg"/><!-- Firefox3.6+ / Opera 10.5+ -->
+    </video>
+    <div class="controls">
+        <button id="playPause">Play</button>
+        <input class="form-control-range" id="sliderBar" type="range" min="0" max="100" value="0" step="1">
+        <div class="timeContainer">
+            <span id="currentTime">0:00</span>
+            <span>/</span>
+            <span id="durationTime">0:00</span>
+        </div>
+    </div>
+</div>
+<div class="social">
+    <div class="viewsContainer">
+        <span class="viewsCaption">Views: </span>
+        <span class="views">0</span>
+    </div>
+    <div class="voteContainer">
+        <button id="thumbsUp">thumbsUp: 0</button>
+        <button id="thumbsDown">thumbsDown: 0</button>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAwUOYZcE9FjPSTsOLngxQMPfZ1FSxdRIY",
+        authDomain: "eko-video-player-shelly.firebaseapp.com",
+        databaseURL: "https://eko-video-player-shelly.firebaseio.com",
+        projectId: "eko-video-player-shelly",
+        storageBucket: "",
+        messagingSenderId: "426216156221",
+        appId: "1:426216156221:web:270cd62ef9e0d025"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+</script>
+
+
+</body>
+</html>
